@@ -1,0 +1,2982 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="rtwreport.css" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>
+Delay Balancing Report for ObjectTrackerHDL
+</title>
+
+</head>
+<body bgcolor="#ffffff" link="0033CC" vlink="#666666" onload="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdDelayBalancing'); else local_onload();}} catch(err) {};">
+<font SIZE="+2" COLOR="#000066">
+Delay Balancing Report for ObjectTrackerHDL
+</font>
+<br /><br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeee">
+<th align="left" valign="top" style="border-style: none">
+<b>
+Port
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Pipeline Latency
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Phase Delay
+</b>
+
+</th>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+ObjectTrackerHDL/ObjectTrackerHDL/pixelOut
+</td>
+<td align="left" valign="top" style="border-style: none">
+25
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+ObjectTrackerHDL/ObjectTrackerHDL/ctrlOut
+</td>
+<td align="left" valign="top" style="border-style: none">
+25
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+
+</tr>
+
+</table>
+<br /><br /><a name="Delay Absorption Summary">
+<font size="+1" color="#000066">
+<b class="midprod">
+Delay Absorption Summary
+</b>
+
+</font>
+
+</a>
+<br /><br />Design delays may not be fully utilized to absorb latency introduced by optimizations and block implementations because there are blockers that inhibit delay absorption. Consider changing <a href="matlab:configset.internal.open('ObjectTrackerHDL','PipelineDistributionPriority')"> PipelineDistributionPriority</a> to 'Performance' to allow delay absorption across the blockers. Note that this can lead to validation model mismatches during the initialization cycles or whole simulation time if the model has feedback loops.<br /><br /><a href="matlab:run('hdlsrc\ObjectTrackerHDL\highlightDelayAbsorption.m')">
+Highlight delay absorption blockers and design delays excluded from absorption
+</a>
+<br /><a href="matlab:run('hdlsrc\ObjectTrackerHDL\clearhighlighting.m')">
+Clear highlighting
+</a>
+<br /><br /><a name="Delay Absorption Detailed Report">
+<font size="+1" color="#000066">
+<b class="midprod">
+Delay Absorption Detailed Report
+</b>
+
+</font>
+
+</a>
+<br /><br />List of delays used for absorption, delays excluded from absorption, and delay absorption blockers. To exclude specific block from being used for absorption, turn off block property 'AllowDelayDistribution'.<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1413')" name="code2model" class="code2model">
+Divide3
+</a>
+
+</h5>
+<table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1413')" name="code2model" class="code2model">
+qBit logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+2 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1413')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1413')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1413')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1413')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1413')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1413')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1413')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1413')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1413')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1413')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1413')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1413')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1413')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1413')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1413')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+
+</table>
+<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1412')" name="code2model" class="code2model">
+Divide2
+</a>
+
+</h5>
+<table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1412')" name="code2model" class="code2model">
+qBit logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+2 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1412')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1412')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1412')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1412')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1412')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1412')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1412')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1412')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1412')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1412')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1412')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1412')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1412')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1412')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1412')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+
+</table>
+<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+Divide4
+</a>
+
+</h5>
+<table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+qBit logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+2 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3817')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+
+</table>
+<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+Divide3
+</a>
+
+</h5>
+<table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+qBit logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+2 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3816')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+
+</table>
+<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+Divide2
+</a>
+
+</h5>
+<table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+qBit logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+2 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2022')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+
+</table>
+<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+Divide1
+</a>
+
+</h5>
+<table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+qBit logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+2 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1250')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+
+</table>
+<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1973')" name="code2model" class="code2model">
+VideoOverlay
+</a>
+
+</h5>
+<table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2284')" name="code2model" class="code2model">
+qBit logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+2 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2284')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2284')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2284')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2284')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2284')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2284')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2284')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2284')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2284')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2284')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2284')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2284')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2284')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2284')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2284')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2284')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2284')" name="code2model" class="code2model">
+rMSBitneg logic
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1 cycles of extra latency cannot be absorbed because of this blocker
+</td>
+
+</tr>
+
+</table>
+<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1389')" name="code2model" class="code2model">
+MaxCorrelation
+</a>
+
+</h5>
+<table width="100%" border="1">
+<tr style="background-color: #eeeeee">
+<th align="left" valign="top" style="border-style: none">
+<b>
+Delay Block
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Sample Time
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Latency Absorbed
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Remaining Delays
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Unabsorbed Latency (total/non-absorbable)
+</b>
+
+</th>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:4831')" name="code2model" class="code2model">
+Delay6_absorbed
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+7.9444e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+20
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:4830')" name="code2model" class="code2model">
+Delay5_absorbed
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+7.9444e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+20
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+
+</table>
+<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3808')" name="code2model" class="code2model">
+ComplexDivide
+</a>
+
+</h5>
+<table width="100%" border="1">
+<tr style="background-color: #eeeeee">
+<th align="left" valign="top" style="border-style: none">
+<b>
+Delay Block
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Sample Time
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Latency Absorbed
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Remaining Delays
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Unabsorbed Latency (total/non-absorbable)
+</b>
+
+</th>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3814')" name="code2model" class="code2model">
+Delay14_absorbed
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+7.9444e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+53
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3815')" name="code2model" class="code2model">
+Delay15_absorbed
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+7.9444e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+53
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+
+</table>
+<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1056')" name="code2model" class="code2model">
+PrevPreprocess
+</a>
+
+</h5>
+<table width="100%" border="1">
+<tr style="background-color: #eeeeee">
+<th align="left" valign="top" style="border-style: none">
+<b>
+Delay Block
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Sample Time
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Latency Absorbed
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Remaining Delays
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Unabsorbed Latency (total/non-absorbable)
+</b>
+
+</th>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:4836')" name="code2model" class="code2model">
+Delay1
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+7.9444e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+4
+</td>
+<td align="left" valign="top" style="border-style: none">
+30
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:4837')" name="code2model" class="code2model">
+Delay2_absorbed
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+7.9444e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+34
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+
+</table>
+<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1241')" name="code2model" class="code2model">
+CurrPreprocess
+</a>
+
+</h5>
+<table width="100%" border="1">
+<tr style="background-color: #eeeeee">
+<th align="left" valign="top" style="border-style: none">
+<b>
+Delay Block
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Sample Time
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Latency Absorbed
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Remaining Delays
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Unabsorbed Latency (total/non-absorbable)
+</b>
+
+</th>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:4841')" name="code2model" class="code2model">
+Delay2
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+7.9444e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+4
+</td>
+<td align="left" valign="top" style="border-style: none">
+30
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:4840')" name="code2model" class="code2model">
+Delay1_absorbed
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+7.9444e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+34
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+
+</table>
+<br /><br /><br /><br />
+</body>
+
+</html>

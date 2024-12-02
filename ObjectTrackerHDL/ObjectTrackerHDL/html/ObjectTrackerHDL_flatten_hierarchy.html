@@ -1,0 +1,636 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="rtwreport.css" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>
+Hierarchy Flattening Report for ObjectTrackerHDL
+</title>
+
+</head>
+<body bgcolor="#ffffff" link="0033CC" vlink="#666666" onload="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdFlattenHierarchy'); else local_onload();}} catch(err) {};">
+<font SIZE="+2" COLOR="#000066">
+Hierarchy Flattening Report for ObjectTrackerHDL
+</font>
+<br /><br /><br /><script>
+<!--
+function hdlTableShrink(o,tagNameStr)
+{
+var temp = document.getElementsByName(tagNameStr);
+if (temp[0].style.display == "")
+{
+	temp[0].style.display = "none";
+	o.innerHTML = '<span style="font-family:monospace">[+]</span>';
+}
+else
+{
+	temp[0].style.display = "";
+	o.innerHTML = '<span style="font-family:monospace">[-]</span>';
+}
+}
+// -->
+</script>
+<script>
+<!--
+function hdlTableCollapseAll(o, numNtks, numComps)
+{
+	var id = "";
+	for (i = 1; i <= numNtks; i++)
+	{
+		for (j = 1; j <= numComps; j++)
+		{
+			id = "Multiply" + "_" + i + "_" + j;
+			var temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Adder" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Subtractor" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Register" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "RAM" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Multiplexer" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+		}
+	}
+	var collapsibles = document.getElementsByName('collapsible');
+	for (i = 0; i < collapsibles.length; i++)
+	{
+		collapsibles[i].innerHTML = '<span style="font-family:monospace">[+]</span>';
+	}
+}
+// -->
+</script>
+<script>
+<!--
+function hdlTableExpandAll(o, numNtks, numComps)
+{
+	var id = "";
+	for (i = 1; i <= numNtks; i++)
+	{
+		for (j = 1; j <= numComps; j++)
+		{
+			id = "Multiply" + "_" + i + "_" + j;
+			var temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Adder" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Subtractor" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Register" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "RAM" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Multiplexer" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+		}
+	}
+	var collapsibles = document.getElementsByName('collapsible');
+	for (i = 0; i < collapsibles.length; i++)
+	{
+		collapsibles[i].innerHTML = '<span style="font-family:monospace">[-]</span>';
+	}
+}
+// -->
+</script>
+<a name="List of subsystems:">
+<font size="+1" color="#000066">
+<b class="midprod">
+List of subsystems:
+</b>
+
+</font>
+
+</a>
+<br /><br /><b>
+<li>'FlattenHierarchy' turned 'on':</li>
+</b>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'onList')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span name="onList" id="onList" style="display: none;">
+<ul class="SystemdefinedCollapse" id="63df858b-6835-4d15-99c0-8fabe18a146b" dataCollapse="off">
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1983')" name="code2model" class="code2model">
+HDL Counter
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1984')" name="code2model" class="code2model">
+HDL Counter1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:731')" name="code2model" class="code2model">
+1-D Lookup
+Table
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:999')" name="code2model" class="code2model">
+HDL Counter
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1253')" name="code2model" class="code2model">
+HDL Counter2
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1240')" name="code2model" class="code2model">
+HDL Counter2
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:971')" name="code2model" class="code2model">
+ReadAddrCntr
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:972')" name="code2model" class="code2model">
+WriteAddrCntr
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:958')" name="code2model" class="code2model">
+Horizontal
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:964')" name="code2model" class="code2model">
+Vertical
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3700')" name="code2model" class="code2model">
+Ai
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3702')" name="code2model" class="code2model">
+Bi
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3878')" name="code2model" class="code2model">
+G
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3879')" name="code2model" class="code2model">
+HDL Counter1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3880')" name="code2model" class="code2model">
+HDL Counter6
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3881')" name="code2model" class="code2model">
+Hi
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2216')" name="code2model" class="code2model">
+ReadAddrCntr
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2217')" name="code2model" class="code2model">
+WriteAddrCntr
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2229')" name="code2model" class="code2model">
+Horizontal
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2235')" name="code2model" class="code2model">
+Vertical
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:808')" name="code2model" class="code2model">
+ReadAddrCntr
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:809')" name="code2model" class="code2model">
+WriteAddrCntr
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:795')" name="code2model" class="code2model">
+Horizontal
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:801')" name="code2model" class="code2model">
+Vertical
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1414')" name="code2model" class="code2model">
+HDL Counter1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:4725')" name="code2model" class="code2model">
+HDL Counter1
+</a>
+
+</li>
+
+</ul>
+<span class="SDCollapseControl" onclick="collapseSD(this, '63df858b-6835-4d15-99c0-8fabe18a146b')" onmouseover="this.style.cursor = 'pointer'">
+&#8743; Less
+</span>
+<br />
+</span>
+<br /><br /><b>
+<li>'FlattenHierarchy' turned 'off':</li>
+</b>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'offList')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span name="offList" id="offList" style="display: none;">
+<ul class="SystemdefinedCollapse" id="d160e1ad-6bac-4f03-841e-fe56dc35e98b" dataCollapse="off">
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2052')" name="code2model" class="code2model">
+CounterDelay
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2215')" name="code2model" class="code2model">
+CounterDelay
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:955')" name="code2model" class="code2model">
+CounterDelay
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1985')" name="code2model" class="code2model">
+MATLAB Function
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:4741')" name="code2model" class="code2model">
+ROIUpdate
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:4703')" name="code2model" class="code2model">
+ROIUpdate
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2256')" name="code2model" class="code2model">
+MaxCtrl
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1389')" name="code2model" class="code2model">
+MaxCorrelation
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1265')" name="code2model" class="code2model">
+StreamAlignment
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:800')" name="code2model" class="code2model">
+Pixel Control
+Bus Creator
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:793')" name="code2model" class="code2model">
+pixelBusGenerator
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:776')" name="code2model" class="code2model">
+UpperRAM
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:764')" name="code2model" class="code2model">
+SwapAddr
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:751')" name="code2model" class="code2model">
+LowerRAM
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:787')" name="code2model" class="code2model">
+BankBit
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2061')" name="code2model" class="code2model">
+CornerTurnMemory
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:732')" name="code2model" class="code2model">
+Prev2-DFFT
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2234')" name="code2model" class="code2model">
+Pixel Control
+Bus Creator
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2227')" name="code2model" class="code2model">
+pixelBusGenerator
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2199')" name="code2model" class="code2model">
+UpperRAM
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2188')" name="code2model" class="code2model">
+SwapAddr
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2177')" name="code2model" class="code2model">
+LowerRAM
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2210')" name="code2model" class="code2model">
+BankBit
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2168')" name="code2model" class="code2model">
+CornerTurnMemory
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2159')" name="code2model" class="code2model">
+Curr2-DFFT
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3808')" name="code2model" class="code2model">
+ComplexDivide
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3795')" name="code2model" class="code2model">
+CoefficientsUpdate
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:3696')" name="code2model" class="code2model">
+CoefficientsUpdate
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:963')" name="code2model" class="code2model">
+Pixel Control
+Bus Creator
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:956')" name="code2model" class="code2model">
+pixelBusGenerator
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:939')" name="code2model" class="code2model">
+UpperRAM
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:926')" name="code2model" class="code2model">
+SwapAddr
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:913')" name="code2model" class="code2model">
+LowerRAM
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:950')" name="code2model" class="code2model">
+BankBit
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2154')" name="code2model" class="code2model">
+CornerTurnMemory
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:892')" name="code2model" class="code2model">
+2-DIFFT
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1381')" name="code2model" class="code2model">
+2-DCorrelation
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1517')" name="code2model" class="code2model">
+Track
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1056')" name="code2model" class="code2model">
+PrevPreprocess
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1241')" name="code2model" class="code2model">
+CurrPreprocess
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1369')" name="code2model" class="code2model">
+Preprocess
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:1973')" name="code2model" class="code2model">
+VideoOverlay
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:2054')" name="code2model" class="code2model">
+Overlay
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ObjectTrackerHDL:728')" name="code2model" class="code2model">
+ObjectTrackerHDL
+</a>
+
+</li>
+
+</ul>
+<span class="SDCollapseControl" onclick="collapseSD(this, 'd160e1ad-6bac-4f03-841e-fe56dc35e98b')" onmouseover="this.style.cursor = 'pointer'">
+&#8743; Less
+</span>
+<br />
+</span>
+<br /><br /><a name="Flattening Status:">
+<font size="+1" color="#000066">
+<b class="midprod">
+Flattening Status:
+</b>
+
+</font>
+
+</a>
+<br /><br />'Hierarchical flattening' was successful.<br /><br /><a name="Generated Model">
+<font size="+1" color="#000066">
+<b class="midprod">
+Generated Model
+</b>
+
+</font>
+
+</a>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+Generated model after the transformation
+</td>
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:open_system('C:\Users\pc\Documents\MATLAB\Examples\R2024a\visionhdl\ObjectTrackingExample\hdlsrc\ObjectTrackerHDL\gm_ObjectTrackerHDL')" class="callMATLAB" name="callMATLAB">gm_ObjectTrackerHDL</a>
+</td>
+
+</tr>
+
+</table>
+<br />
+</body>
+
+</html>
