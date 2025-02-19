@@ -14,6 +14,6 @@ eliminating redundant assignments, and refining the initialization process
 
 ## 📚 Referanslar
 1. [MIT-BIH Arrhythmia Database](https://physionet.org/content/mitdb/)
-2. [Object Tracking Using 2-D FFT](](https://www.mathworks.com/help/visionhdl/ug/object-tracking.html))
+2. [Object Tracking Using 2-D FFT](https://www.mathworks.com/help/visionhdl/ug/object-tracking.html)
 3. Pan, J., & Tompkins, W. J. (1985). [A Real-Time QRS Detection Algorithm](https://ieeexplore.ieee.org/document/4122029)
 4. Mallat, S. (1999). [A Wavelet Tour of Signal Processing](https://dl.acm.org/doi/book/10.5555/553543)
