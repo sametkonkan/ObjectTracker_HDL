@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 📜 ABSTRACT
-This study extends the capabilities of a 2-D FFT-based object tracking algorithm to dynamically
+  This study extends the capabilities of a 2-D FFT-based object tracking algorithm to dynamically
 optimize Region of Interest (ROI) and improve edge detection accuracy by integrating Contrast
 Limited Adaptive Histogram Equalization (CLAHE). The improvements address issues with
 edge detection noise, especially from background elements like clouds, and enhance the
