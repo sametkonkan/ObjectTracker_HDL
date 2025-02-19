@@ -13,7 +13,5 @@ robustness of object tracking. Adjustments include restructuring workspace handl
 eliminating redundant assignments, and refining the initialization process
 
 ## 📚 Referanslar
-1. [MIT-BIH Arrhythmia Database](https://physionet.org/content/mitdb/)
-2. [Object Tracking Using 2-D FFT](https://www.mathworks.com/help/visionhdl/ug/object-tracking.html)
-3. Pan, J., & Tompkins, W. J. (1985). [A Real-Time QRS Detection Algorithm](https://ieeexplore.ieee.org/document/4122029)
-4. Mallat, S. (1999). [A Wavelet Tour of Signal Processing](https://dl.acm.org/doi/book/10.5555/553543)
+1. [Object Tracking Using 2-D FFT](https://www.mathworks.com/help/visionhdl/ug/object-tracking.html)
+2.  D. S. Bolme, J. R. Beveridge, B. A. Draper and Y. M. Lui, "Visual object tracking using adaptive correlation filters," 2010 IEEE Computer Society Conference on Computer Vision and Pattern Recognition, 2010, pp. 2544–2550, doi: 10.1109/CVPR.2010.5539960.
