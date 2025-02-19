@@ -11,3 +11,9 @@ Limited Adaptive Histogram Equalization (CLAHE). The improvements address issues
 edge detection noise, especially from background elements like clouds, and enhance the
 robustness of object tracking. Adjustments include restructuring workspace handling,
 eliminating redundant assignments, and refining the initialization process
+
+## 📚 Referanslar
+1. [MIT-BIH Arrhythmia Database](https://physionet.org/content/mitdb/)
+2. [[WFDB Toolbox for MATLAB](https://physionet.org/content/wfdb-matlab/](https://www.mathworks.com/help/visionhdl/ug/object-tracking.html))
+3. Pan, J., & Tompkins, W. J. (1985). [A Real-Time QRS Detection Algorithm](https://ieeexplore.ieee.org/document/4122029)
+4. Mallat, S. (1999). [A Wavelet Tour of Signal Processing](https://dl.acm.org/doi/book/10.5555/553543)
